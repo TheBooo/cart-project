@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Just Play piano store</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon menu-btn" id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="./img/logo.png" alt="store logo" />
+        <div id="cart-btn" class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-arrow-down"></i>
+          </span>
+          <div id="cart-items" class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!--end of navbar-->
+    <!--banner-->
+    <header class="banner-container">
+      <div id="banner" class="banner">
+        <h1 class="banner-title">клавишные инструменты</h1>
+        <a href="#store-section">
+          <button class="banner-btn">В магазин</button>
+        </a>
+      </div>
+    </header>
+    <!--end of banner-->
+    <!--products-->
+    <section id="store-section" class="products">
+      <div class="section-title">
+        <h2>фортепиано</h2>
+      </div>
+      <div class="products-center"></div>
+    </section>
+    <!--end of products-->
+
+    <!--cart-->
+    <div class="cart-overlay">
+      <div id="cart" class="cart">
+        <span id="close-cart" class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>корзина</h2>
+        <div id="cart-content" class="cart-content">
+          <!-- cart item-->
+          <!--<div class="cart-item"></div>-->
+          <!--end of cart item-->
+        </div>
+        <div class="cart-footer">
+          <h3>итого : $ <span id="cart-total" class="cart-total">0</span></h3>
+          <div class="cart-btns">
+            <button id="clear-cart" class="clear-cart banner-btn">
+              очистить корзину
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--end of cart-->
+
+      <!-- MENU -->
+      <div id="menu" class="menu">
+        <span id="close-menu" class="close-menu">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>меню</h2>
+        <div id="menu-links" class="menu-links">
+          <ul>
+            <li class="menu-item">
+              <a href="#top" class=""><h3>домой</h3></a>
+            </li>
+            <li class="menu-item">
+              <a href="#store-section" class=""><h3>фортепиано</h3></a>
+            </li>
+            <li class="menu-item">
+              <a href="#contacts" class=""><h3>контакты</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end of menu-->
+    </div>
+
+    <!--CONTACTS-->
+    <section id="contacts" class="contacts">
+      <div class="section-title">
+        <h2>контакты</h2>
+      </div>
+      <div class="contacts-container">
+        <h2 class="email">
+          fearntn@gmail.com / fearntn@yandex.ru
+        </h2>
+      </div>
+    </section>
+    <!--END OF CONTACTS-->
+    <!--contentful-->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!--app js-->
+    <script src="app.js"></script>
+  </body>
+</html>
