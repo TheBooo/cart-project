@@ -17,7 +17,8 @@
 }
 
 body {
-  font-family: "Bad Script", cursive;
+  /*font-family: "Bad Script", cursive;*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*-------------------  NAVBAR  ---------------*/
@@ -83,6 +84,7 @@ body {
   padding: 1rem;
 }
 .banner-title {
+  margin: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
@@ -341,6 +343,7 @@ body {
 
 .menu-item a {
   text-decoration: none;
+  margin: 0.4rem;
   color: var(--mainBlack);
   transition: var(--mainTransition);
 }
